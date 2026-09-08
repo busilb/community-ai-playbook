@@ -143,6 +143,7 @@ src/
 - [社区志愿者 AI 日常提效工具包](docs/volunteer-ai-toolkit.md)：四类场景的 SOP、提示词、模板和安全边界
 - [试点回放记录](docs/volunteer-pilot-replay-2026-09.md)：从真实培训记录提炼出的流程、已验证事项和现场验证表
 - [试点成品样例](docs/volunteer-pilot-output-sample.md)：将一场真实培训回放为通知、方案、需求记录和总结初稿
+- [现场记录卡](docs/volunteer-field-pilot-sheet.md)：下一场活动直接打印使用，采集真实耗时和反馈
 
 当前回放只证明流程具备试用条件，不代表已经产生具体效率提升比例。需要在下一场真实活动中补录使用前后耗时、修改次数和志愿者反馈后，才能发布下一版结论。
 
