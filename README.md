@@ -6,6 +6,8 @@
 
 ## 快速开始
 
+当前 GitHub Pages 使用 `docs/` 内的轻量静态版本，打开 `docs/index.html` 即可本地预览；它不依赖后端，适合先持续沉淀课堂场景。
+
 ```bash
 npm install
 npm run dev
@@ -14,6 +16,14 @@ npm run dev
 访问 http://localhost:3000
 
 ## 如何新增一个场景
+
+### GitHub Pages 静态版（当前线上版本）
+
+在 `docs/data.js` 的 `COMMUNITY_SCENARIOS` 数组中增加一条对象，字段包括 `title`、`role`、`category`、`pain`、`steps`、`prompt` 和 `safety`。页面会自动生成卡片、详情弹窗、复制提示词和反馈埋点事件，不需要修改页面结构。
+
+课堂记录放在同文件的 `COMMUNITY_CLASSES` 数组中；如果有独立案例页，将 `href` 指向对应的 `docs/*.html`。
+
+### MDX 版（后续扩展）
 
 1. 在 `content/<角色目录>/` 下创建 `.mdx` 文件，如 `content/volunteer/new-scenario.mdx`
 
@@ -126,4 +136,10 @@ src/
 
 ## 版本
 
-当前版本：v0.1
+当前版本：v0.2（基于 6 场真实公益培训记录提炼 15 个种子场景）
+
+## 本轮内容来源与提炼原则
+
+已从 Obsidian 中的社区公益培训记录提炼出老年人、社区志愿者、家长/小学生、物业工作人员四类角色，覆盖健康、安全、生活、创作、学习和社区服务。内容默认匿名化，并遵循“真实问题 → 可复用步骤 → 可复制提示词 → 人工判断与安全边界 → 反馈迭代”的结构。
+
+AI 只辅助理解、生成和整理；医疗、用药、金融、反诈、隐私和未成年人相关事项，必须由专业人员、家属或监护人复核。
